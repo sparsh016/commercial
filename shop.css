@@ -1,0 +1,487 @@
+*{
+
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+
+nav{
+
+    background-color: rgb(5, 5, 31);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    
+}
+
+nav ul{
+    display: flex;
+    margin-right: 50px;
+}
+ul li{
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+ul li a{
+
+   text-decoration: none;
+   margin-inline: 20px;
+   align-items: center;
+   color: white;
+}
+
+ul li a:hover{
+
+    color: aqua;
+}
+
+nav .logo h2{
+
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.icon{
+
+    display: none;
+    align-items: center;
+    margin-right: 12px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px)
+{
+    nav ul{
+        display: none;
+    }
+
+    .icon{
+        display: flex;
+    }
+
+    .showData{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 69px;
+        background-color: gray;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        gap: 2px;
+
+        
+    }
+
+    .main , .cards{
+        flex-wrap: wrap;
+    }
+
+    .main img{
+
+        height: 80%;
+        width: 80%;
+    }
+    .maintext button{
+        width: 80%;
+        height: 80%;
+    }
+
+    .rcrd{
+
+        flex-wrap: wrap;
+        
+    }
+    .rcard{
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .blog
+    {
+        flex-wrap: wrap;
+        
+    }
+    .blogcards{
+        margin-top: 10px;
+    }
+
+    
+}
+
+.main{
+
+    display: flex;
+    justify-content:space-around;
+   padding-top:155px ;
+   
+
+}
+
+.maintext h1 {
+    
+    font-size: 50px;
+    color: rgb(4, 146, 146);
+}
+.maintext h2{
+    font-size: 40px;
+}
+
+.maintext button{
+
+    width: 120px;
+    background-color: rgb(5, 137, 137);
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    font-size: 20px;
+}
+
+.maintext button:hover{
+    
+    background-color: transparent;
+    border: 1px solid aqua;
+}
+
+/*shop card*/
+
+.head {
+ text-align: center;
+}
+
+.head h3{
+
+    font-size: 40px;
+}
+.head h3 span{
+    color: #b16604;
+}
+
+.shop{
+
+    padding-top:155px ;
+}
+.cards{
+
+    display: flex;
+    justify-content: center;
+   
+   
+}
+
+.cards .crd{
+
+    margin-inline: 20px;
+    text-align: center;
+}
+
+.crd i{
+
+    color: rgb(233, 154, 7);
+    
+}
+
+/*reviews*/
+
+.reviews{
+
+    padding-top: 100px ;
+}
+
+.rcrd{
+
+    display: flex;
+    justify-content: center;
+}
+
+.rcard{
+
+    text-align: center;
+    margin-inline: 20px;
+    width: 200px;
+    height: 250px;
+    background-color: gray;
+}
+
+.rcard img{
+
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.rcard button{
+    color: rgb(170, 111, 4);
+    cursor: pointer;
+}
+
+.rcard button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(170, 111, 4);;
+}
+
+.rcard:hover{
+
+    background-color: rgb(196, 192, 192);
+    color: black;
+    transition: 200ms ease-in;
+    cursor: pointer;
+    
+}
+
+/*blogs*/
+
+
+.read{
+    padding-top:90px ;
+}
+
+.blog{
+
+    display: flex;
+    justify-content: center;
+}
+
+.blog .blogcards{
+
+    height: auto;
+    width: 340px;
+    text-align: center;
+    margin-inline: 50px;
+    padding: 11px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.blog .blogcards img{
+    
+    width: 100%;
+
+}
+
+.blogcards:hover{
+    
+    transition: 0.5s ease-out;
+    background-color: gray;
+}
+
+.blogcards a{
+
+   padding: 4px 20px;
+    font-size: 18px;
+    background-color: rgb(3, 90, 90);
+    text-decoration: none;
+    color: white;
+}
+.blogcards a:hover{
+
+    background-color: white;
+    color: black;
+   
+}
+
+
+
+/*contact*/
+
+.contact{
+ 
+    position: relative;
+    top: 70px;
+}
+
+
+
+.contact .connect{
+    
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+}
+
+.connect input{
+
+    width: 400px;
+    height: 30px;
+    position: relative;
+    left: 35%;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    
+}
+
+.connect label{
+
+    position: relative;
+    left: 35%;
+    font-weight: 600;
+}
+
+.connect button{
+
+    width: 85px;
+    height: 30px;
+    position: relative;
+    left: 45%;
+    background-color: #452803;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.connect button:hover{
+    background-color: transparent;
+    color: rgb(27, 223, 125);
+    border: 2px solid rgb(27, 223, 125);
+}
+
+.footer{
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 42, 42);
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    
+}
+
+.footer .Text{
+
+    margin-inline: 100px;
+    color: white;
+    height: 300px;
+    width: 500px;
+    justify-content: center;
+}
+
+
+.itemPage{
+    display: none;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.itemPage .info{
+
+    margin-left: 20px;
+}
+
+.itemPage input{
+
+    width: 40px;
+    height: 20px;
+    font-size: 18px;
+}
+
+.itemPage a{
+       
+    padding: 10px 25px;
+    color: white;
+    background-color: rgb(140, 73, 48);
+    text-decoration: none;
+    cursor: pointer;
+}
+#offer{
+    color: rgb(16, 230, 16);
+}
+
+
+/*buy page*/
+
+
+.buyPage{
+  display: none;
+   width: 25%;
+   background-color: #b5acac;
+   padding: 22px;
+   position: absolute;
+   left: 30%;
+   right: 70%;
+   top: 6%;
+   
+   
+}
+
+
+.buyText input{
+
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 1px;
+    border: none;
+    width: 95%;
+    border: 1px solid rgb(115, 114, 114);
+  
+
+}
+.buyText select{
+
+    padding: 10px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.buyPage .cross
+{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: white;
+    background-color: rgb(85, 84, 84);
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.buyText button{
+
+    padding: 12px;
+    background-color: rgb(119, 69, 51);
+    color: black;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+.buyText button:hover{
+    background-color: rgb(148, 124, 116);
+}
+
+#orders{
+
+    cursor: pointer;
+}
+
+.search input{
+
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    left: 20%;
+    
+   
+}
+
+.search #sea{
+
+    color: black;
+}
+
+
+
